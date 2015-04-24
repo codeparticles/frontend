@@ -1,0 +1,28 @@
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script>
+function myC($scope){
+$scope.hello="world";
+
+$scope.changer=function(){
+alert("changed");
+
+}
+}
+</script>
+<div ng-app>
+<div ng-controller="myC">
+
+
+<select ng-model="modeler" ng-change="changer()">
+	<option>one</option>
+	<option>two</option>
+	<option>three</option>
+
+</select>
+
+
+<p>{{hello}}</p>
+
+</div>
+</div>

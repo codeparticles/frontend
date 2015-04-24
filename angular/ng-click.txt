@@ -1,0 +1,21 @@
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script>
+function myC($scope){
+
+$scope.clicker=function(){
+alert("clicked");
+
+}
+}
+</script>
+<div ng-app>
+<div ng-controller="myC">
+
+
+<button ng-click="clicker()">click this</button>
+
+
+
+</div>
+</div>
