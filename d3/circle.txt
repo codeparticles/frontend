@@ -1,0 +1,17 @@
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js'></script>
+<body></body>
+
+<script>
+
+var svg= d3.select("body").append("svg")
+    .attr("width", 200)
+    .attr("height", 200);
+
+
+var circle = svg.append("circle")
+    .style("fill", "blue")
+    .attr("cy", 90)
+    .attr("cx", 90)
+    .attr("r", 30);
+
+</script>
